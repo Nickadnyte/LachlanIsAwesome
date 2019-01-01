@@ -14,9 +14,4 @@ for line in f:
     if re.search("Lachlan is awesome", line) != None:
         counter+=1
 
-if counter == 0:
-    print("\"Lachlan is awesome\" did not appear.")
-elif counter == 1:
-    print("\"Lachlan is awesome\" appeared once.")
-else:
-    print("\"Lachlan is awesome\" appeared " + str(counter) + " times.")
+print("\"Lachlan is awesome\" appeared in " + str(counter) + " lines.")
